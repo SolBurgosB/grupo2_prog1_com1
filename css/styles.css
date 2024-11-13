@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+ol,ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* CSS DEL INDEX */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+.items li{
+    margin: 0px 10px;
+}
+.buscar{
+    background-color: #033c89;
+    color: white;
+    padding: 3px 10px;
+    border: solid white 2px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.imgfetch{
+    width: 30%
+}
+.recetassection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} /* REVISAR A QUE CONTENEDOR PONERLO
+
+/* CSS DEL CATEGORIES */
+
+/* CSS DEL LOGIN */
+
+/* CSS DEL REGISTER */
+
