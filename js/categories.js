@@ -1,0 +1,42 @@
+let formulario= document.querySelector(".fheader")
+let valido= document.querySelector(".iheader")
+let completarb= document.querySelector(".completarb")
+formulario.addEventListener("submit", function(event){
+    let valida = true
+    event.preventDefault();
+    if (valido.value == " ") {
+        completarb.style.display= "block"
+        valida= false
+    }
+    if (valido.value.length < 3) {
+        completarb.style.display= "block"
+        valida= false
+    }
+    if (valida) {
+        formulario.submit()
+    }
+})
+
+let categorias= document.querySelector(".categorias")
+fetch('https://dummyjson.com/recipes/tags')
+    .then(function(response) {
+            return response.json()
+    })
+    //No modificar hasta aca
+    
+    .then(function(data) {
+        console.log(data);
+        let informacion = "";
+        for (let i = 0; i < data.tags.length; i++) {
+            console.log(data.tags[i]);
+            `<article>
+                <p><a href="./category.html?tag=${data.tags[i]}">${data.tags[i]}</a></p>
+            </article>`
+        } 
+        categorias.innerHTML=informacion
+    })
+    //No modificar desde aca
+    .catch(function(error) {
+            console.log("Error: " + error);
+    })
+

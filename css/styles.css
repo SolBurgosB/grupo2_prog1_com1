@@ -52,11 +52,19 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-} /* REVISAR A QUE CONTENEDOR PONERLO
+} /* REVISAR A QUE CONTENEDOR PONERLO*/
+.completarb{
+    display: none;
+}
 
 /* CSS DEL CATEGORIES */
 
 /* CSS DEL LOGIN */
 
 /* CSS DEL REGISTER */
-
+.completarc{
+    display: none;
+}
+.completare{
+    display: none;
+}
