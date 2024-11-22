@@ -7,6 +7,8 @@ fetch(`https://dummyjson.com/recipes/${id}`) //hago lo de comillas invertidas, e
         return response.json();
     })
     .then(function(data) {
+        console.log(data);
+        
        let nombre = document.querySelector(".nombre"); //esto es la clase del HTML
        nombre.innerText+=` ${data.name}` //este .algo tiene que coincidir con la API
        let instruccion = document.querySelector(".instruccion");
@@ -18,7 +20,12 @@ fetch(`https://dummyjson.com/recipes/${id}`) //hago lo de comillas invertidas, e
        let foto= document.querySelector(".foto");
        foto.src=`${data.image}`
        let categoria= document.querySelector(".categoria"); 
-       categoria.src=`${data.tags}` //Falta solo resolver las categorias porque son mas de dos, cómo hacemos
+       //categoria.src=`${data.tags}` //Falta solo resolver las categorias porque son mas de dos, cómo hacemos
+        for (let i = 0; i < data.tags.length; i++) {
+            categoria.innerHTML+=`${data.tags[i]}`
+            
+        }
+
     })
     .catch(function(error) {
         console.log("Error: " + error);

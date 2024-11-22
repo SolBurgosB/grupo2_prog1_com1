@@ -18,6 +18,33 @@ p{
     font-weight: 400;
     font-style: normal;
 }
+footer{
+    background-image: url(../img/Imagen\ de\ WhatsApp\ 2024-11-22\ a\ las\ 12.37.23_74fd6c9b.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    position: bottom;
+}
+.titulo{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #033c89;
+}
+.subtitulo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #033c89;
+    font-size: 20px;
+}
+
 /* CSS DEL INDEX */
 header{
     display: flex;
@@ -60,6 +87,45 @@ header{
 /* CSS DEL CATEGORIES */
 
 /* CSS DEL LOGIN */
+
+.formulariologin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemslogin{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 10%;
+    margin: 5%;
+    border: 1.5px #033c89 solid;
+    border-radius: 10px;
+}
+.botoneslogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 150px; 
+    padding: 50px;
+}
+.cuenta{
+    display: block;
+    text-wrap: nowrap;
+    color: white;
+    padding: 3px;
+}
+button{
+    background-color: #033d8974;
+}
 
 /* CSS DEL REGISTER */
 .completarc{

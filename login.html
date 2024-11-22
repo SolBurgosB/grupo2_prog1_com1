@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="">
         <img class="logo" src="./img/logo.png" alt="logo">
         <nav>
             <ul class="items">
@@ -26,13 +26,15 @@
             <p class="completarb">No se realizó ninguna búsqueda</p>
         </form>
     </header>
-    <div class="">
-        <h2>Ingresá</h2>
+    <div class="formulariologin">
+        <h2 class="titulo">Ingresá</h2>
         <form class="flogin" action="./index.html" method="get"> 
-            <input type="email" placeholder="Ingresá tu email" class="evalido"> 
-            <input type="password" placeholder="Contraseña" class="cvalida">
-            <button type="submit">Ingresá</button>
-            <a href="./register.html">No tengo cuenta</a>
+            <input type="email" placeholder="Ingresá tu email" class="evalido itemslogin"> 
+            <input type="password" placeholder="Contraseña" class="cvalida itemslogin">
+            <section class="botoneslogin">
+                <button type="submit" class="itemslogin">Ingresá</button>
+                <button class="itemslogin"><a href="./register.html" class="cuenta">No tengo cuenta</a></button>
+            </section>
         </form>
     </div>
     <footer>
