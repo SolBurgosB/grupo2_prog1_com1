@@ -17,6 +17,9 @@ formulario.addEventListener("submit", function(event){
     }
 })
 
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let categoria = queryStringObj.get("categories");
 let categorias= document.querySelector(".categorias")
 fetch('https://dummyjson.com/recipes/tags')
     .then(function(response) {

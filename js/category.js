@@ -3,7 +3,7 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams (queryString);
 let categoria=queryStringObj.get("categoria");
 
-fetch(`https://dummyjson.com/recipes/tags/${categoria}`)
+fetch(`https://dummyjson.com/recipes/tag/${categoria}`)
     .then(function(response) {
             return response.json()
     })
@@ -12,12 +12,15 @@ fetch(`https://dummyjson.com/recipes/tags/${categoria}`)
     .then(function(data) {
         console.log(data);
         
-        let informacion = "";
-        for (let i = 0; i < data.length; i++) {
-            console.log(data[i]);
+        let informacion = `<h2>Categoría: ${categoria} </h2>`;
+        for (let i = 0; i < data.recipes.length; i++) {
+            console.log(data.recipes);
             informacion +=
             `<article>
-                <p>${data[i]}</p>
+                <img src="${data.recipes[i].image}" alt ="${data.recipes[i].name}">
+                <h2>${data.recipes[i].name}</h2>
+                <p><strong>Dificultad:</strong> ${data.recipes[i].difficulty}</p>
+                <p><a href="./receta.html?id=${data.recipes[i].id}">Ver detalle</a></p>
             </article>`
         } 
         cdetalle.innerHTML=informacion

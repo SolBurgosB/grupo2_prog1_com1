@@ -19,11 +19,10 @@ fetch(`https://dummyjson.com/recipes/${id}`) //hago lo de comillas invertidas, e
        tiempoC.innerText+=` ${data.cookTimeMinutes}`
        let foto= document.querySelector(".foto");
        foto.src=`${data.image}`
-       let categoria= document.querySelector(".categoria"); 
-       //categoria.src=`${data.tags}` //Falta solo resolver las categorias porque son mas de dos, cómo hacemos
+       let categoria= document.querySelector(".categoria");
+
         for (let i = 0; i < data.tags.length; i++) {
-            categoria.innerHTML+=`${data.tags[i]}`
-            
+            categoria.innerHTML+=` <a href="./category.html?categoria=${data.tags[i]}">${data.tags[i]}</a>`   
         }
 
     })

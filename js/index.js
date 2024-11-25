@@ -1,5 +1,11 @@
 let recetassection= document.querySelector(".recetassection")
-fetch('https://dummyjson.com/recipes')
+let vermas = document.querySelector(".vermas");
+let skip = 0;
+let limit = 10;
+
+function limiterecetas() {
+    
+fetch(`https://dummyjson.com/recipes?limit=${limit}&skip=${skip}`)
     .then(function(response) {
             return response.json()
     })
@@ -7,7 +13,7 @@ fetch('https://dummyjson.com/recipes')
     
     .then(function(data) {
         console.log(data);
-        let informacion = "";
+        let informacion = recetassection.innerHTML;
         for (let i = 0; i < data.recipes.length; i++) {
             console.log(data.recipes[i]);
             informacion+= 
@@ -24,6 +30,13 @@ fetch('https://dummyjson.com/recipes')
     .catch(function(error) {
             console.log("Error: " + error);
     })
+    }
+    limiterecetas();
+    vermas.addEventListener("click" , function () {
+        skip+=limit;
+        vermas.style.display="none";
+        limiterecetas();
+    });
 
     let formulario= document.querySelector(".fheader")
     let valido= document.querySelector(".iheader")
