@@ -36,7 +36,7 @@ footer{
     font-style: normal;
     font-weight: bold;
     color: #033c89;
-    margin-bottom: 5px;
+    margin: 5px 0px;
 }
 .subtitulo{
     font-family: "Poppins", sans-serif;
@@ -89,16 +89,21 @@ header{
 /* CSS DEL CATEGORIES */
 
 /* CSS DEL LOGIN */
-
+.cajalogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .formulariologin{
-    background-color: rgba(0, 0, 0, 0.092);
-    width: 30%;
+    background-color: #7895bc5c;
+    width: 400px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 20px;
 }
 .flogin{
     display: flex;
@@ -112,7 +117,8 @@ header{
     font-style: normal;
     color: white;
     padding: 10px;
-    margin: 7px;
+    margin: 10px 5px;
+    width: 250px;
     border: 1.5px #033c89 solid;
     border-radius: 10px;
 }
@@ -121,7 +127,7 @@ header{
     flex-direction: row;
     justify-content: center;
     width: 150px; 
-    padding: 50px;
+    padding: 20px;
 }
 .cuenta{
     display: block;
@@ -140,11 +146,9 @@ button{
 .completare{
     display: none;
 }
-
 .tyc{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-top: 20px;
 }
-
