@@ -14,7 +14,7 @@ fetch(`https://dummyjson.com/recipes/tag/${categoria}`)
         
         let informacion = `<h2>Categoría: ${categoria} </h2>`;
         for (let i = 0; i < data.recipes.length; i++) {
-            console.log(data.recipes);
+            console.log(data.recipes); 
             informacion +=
             `<article>
                 <img src="${data.recipes[i].image}" alt ="${data.recipes[i].name}">
