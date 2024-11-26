@@ -12,12 +12,12 @@ fetch(`https://dummyjson.com/recipes/tag/${categoria}`)
     .then(function(data) {
         console.log(data);
         
-        let informacion = `<h2>Categoría: ${categoria} </h2>`;
+        let informacion = `<h2 class="titcateg">Categoría: ${categoria}</h2>`;
         for (let i = 0; i < data.recipes.length; i++) {
             console.log(data.recipes); 
             informacion +=
-            `<article>
-                <img src="${data.recipes[i].image}" alt ="${data.recipes[i].name}">
+            `<article class="artcateg">
+                <img src="${data.recipes[i].image}" alt ="${data.recipes[i].name}" class="foto">
                 <h2>${data.recipes[i].name}</h2>
                 <p><strong>Dificultad:</strong> ${data.recipes[i].difficulty}</p>
                 <p><a href="./receta.html?id=${data.recipes[i].id}">Ver detalle</a></p>

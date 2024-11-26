@@ -22,7 +22,7 @@ fetch(`https://dummyjson.com/recipes/${id}`) //hago lo de comillas invertidas, e
        let categoria= document.querySelector(".categoria");
 
         for (let i = 0; i < data.tags.length; i++) {
-            categoria.innerHTML+=` <a href="./category.html?categoria=${data.tags[i]}">${data.tags[i]}</a>`   
+            categoria.innerHTML+=` <a class="unaporuna" href="./category.html?categoria=${data.tags[i]}">${data.tags[i]}</a>`   
         }
 
     })
