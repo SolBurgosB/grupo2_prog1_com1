@@ -74,16 +74,49 @@ header{
     font-size: 12px;
 }
 .imgfetch{
-    width: 30%
+    width: 40%
 }
 .recetassection{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-} /* REVISAR A QUE CONTENEDOR PONERLO*/
+} 
+.recetasarticle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    margin-top: 30px;
+}
 .completarb{
     display: none;
+}
+.titindex{
+    text-align: center;
+}
+.artboton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.vermas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 150px;
+    border: 1.5px #033c89 solid;
+    border-radius: 10px;
 }
 
 /* CSS DEL CATEGORIES */
