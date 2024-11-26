@@ -275,6 +275,9 @@ button{
     flex-direction: column;
     width: 40vw;
     margin-top: 30px;
+    background-color: #7895bc5c;
+    border-radius: 10px;
+    padding: 15px;
 }
 .instruccion{
     text-align: center;
@@ -300,10 +303,70 @@ button{
     flex-direction: column;
     width: 40vw;
     margin-top: 30px;
+    background-color: #7895bc5c;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #033c89;
 }
 .titcateg{
     text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #033c89;
+    margin: 5px 0px;
 }
+.puntual{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #033c89;
+}
+
+/*CSS SEARCH-RESULTS*/
+.resultados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .artsearch{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 40vw;
+     margin-top: 30px;
+     background-color: #7895bc5c;
+     border-radius: 10px;
+     padding: 15px;
+     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #033c89;
+ }
+ .resul{
+    margin-bottom: 10px;
+    font-weight: bold;
+ }
+ .puntual2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #033c89;
+    text-decoration: underline;
+ }
+ .puntual2:hover{
+    font-weight: bold;
+ }
+
 
 
 /*RESPONSIVE*/
