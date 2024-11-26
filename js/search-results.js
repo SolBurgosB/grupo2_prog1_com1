@@ -31,7 +31,7 @@ fetch(`https://dummyjson.com/recipes`) //hago lo de comillas invertidas, el /${c
         let resultado = "";
         let encontrado = false; 
         for (let i = 0; i < data.recipes.length; i++) {
-            if (data.recipes[i].name.includes(nombre)) {
+            if (data.recipes[i].name.toUpperCase().includes(nombre.toUpperCase())) {
                 encontrado = true;
                 console.log(data.recipes[i]);
                 //voy acumulando la información que quiero

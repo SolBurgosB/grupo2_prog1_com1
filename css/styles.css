@@ -74,7 +74,8 @@ header{
     font-size: 12px;
 }
 .imgfetch{
-    width: 40%
+    width: 50%;
+    border-radius: 10px;
 }
 .recetassection{
     display: flex;
@@ -89,7 +90,13 @@ header{
     align-items: center;
     flex-direction: column;
     width: 40vw;
+    width: 500px;
     margin-top: 30px;
+    background-color: #7895bc5c;
+    padding: 30px 0px;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .completarb{
     display: none;
@@ -113,10 +120,20 @@ header{
     font-style: normal;
     color: white;
     padding: 10px;
-    margin: 10px 5px;
+    margin-top: 80px;
     width: 150px;
     border: 1.5px #033c89 solid;
     border-radius: 10px;
+}
+.azulindex{
+    color: #033c89;
+    margin-top: 5px;
+}
+.link{
+    text-decoration: underline;
+}
+.link:hover{
+    font-weight: bold;
 }
 
 /* CSS DEL CATEGORIES */
@@ -183,5 +200,5 @@ button{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 10px;
 }
