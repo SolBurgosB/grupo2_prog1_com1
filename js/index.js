@@ -17,7 +17,7 @@ fetch(`https://dummyjson.com/recipes?limit=${limit}&skip=${skip}`)
         for (let i = 0; i < data.recipes.length; i++) {
             console.log(data.recipes[i]);
             informacion+= 
-            `<article>
+            `<article class="recetasarticle">
                 <img src="${data.recipes[i].image}" alt="imagen receta" class="imgfetch"/> 
                 <p>Titulo: ${data.recipes[i].name}</p>
                 <p>Dificultad: ${data.recipes[i].difficulty}</p>
