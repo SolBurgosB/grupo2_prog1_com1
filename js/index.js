@@ -19,9 +19,9 @@ fetch(`https://dummyjson.com/recipes?limit=${limit}&skip=${skip}`)
             informacion+= 
             `<article class="recetasarticle">
                 <img src="${data.recipes[i].image}" alt="imagen receta" class="imgfetch"/> 
-                <p>Titulo: ${data.recipes[i].name}</p>
-                <p>Dificultad: ${data.recipes[i].difficulty}</p>
-                <p><a href="./receta.html?id=${data.recipes[i].id}">Link a la receta</a></p>
+                <p class="azulindex" >Titulo: ${data.recipes[i].name}</p>
+                <p class="azulindex">Dificultad: ${data.recipes[i].difficulty}</p>
+                <p class="azulindex"><a href="./receta.html?id=${data.recipes[i].id}" class="azulindex link">Link a la receta</a></p>
             </article>`
         } 
         recetassection.innerHTML=informacion
