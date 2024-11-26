@@ -46,6 +46,8 @@ footer{
     font-size: 15px;
     margin-top: 5px;
 }
+
+/* CSS DEL INDEX */
 header{
     display: flex;
     flex-wrap: wrap;
@@ -75,11 +77,9 @@ header{
     background-color:#7895bc88;
     border: 2px #033c89 solid;
 }
-
-/* CSS DEL INDEX */
-
 .imgfetch{
-    width: 40%
+    width: 50%;
+    border-radius: 10px;
 }
 .recetassection{
     display: flex;
@@ -94,7 +94,13 @@ header{
     align-items: center;
     flex-direction: column;
     width: 40vw;
+    width: 500px;
     margin-top: 30px;
+    background-color: #7895bc5c;
+    padding: 30px 0px;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .completarb{
     display: none;
@@ -118,7 +124,7 @@ header{
     font-style: normal;
     color: white;
     padding: 10px;
-    margin: 10px 5px;
+    margin-top: 80px;
     width: 150px;
     border: 1.5px #033c89 solid;
     border-radius: 10px;
@@ -126,6 +132,16 @@ header{
 .vermas:hover{
     background-color:#7895bc88;
     border: 2px #033c89 solid;
+}
+.azulindex{
+    color: #033c89;
+    margin-top: 5px;
+}
+.link{
+    text-decoration: underline;
+}
+.link:hover{
+    font-weight: bold;
 }
 
 /* CSS DEL CATEGORIES */
@@ -164,7 +180,6 @@ header{
 .textocategorias{
     color: #033c89
 }
-
 /* CSS DEL LOGIN */
 .cajalogin {
     display: flex;
@@ -232,276 +247,6 @@ button{
     font-weight: 400;
     font-style: normal;
     margin-top: 20px;
-}
-/*CSS RECETA*/
-.nombre{
-    font-weight: bold;
-}
-
-/*RESPONSIVE*/
-/*general*/
-@media (max-width: 640px)  {
-    body{
-        margin-top: 80px;
-    }
-    .logo{
-        width: 20%;
-    }
-    header{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        position: fixed;
-        top: 0;
-        background-color:#ffffff;
-    }
-    .items{
-        display: flex;
-        justify-content: space-between;
-    }
-    .items li{
-        margin: 0px 10px;
-        font-size: 13px;
-    }
-    .fheader{
-        display: none;
-    }
-    footer{
-        background-image: url(../img/Imagen\ de\ WhatsApp\ 2024-11-22\ a\ las\ 12.37.23_74fd6c9b.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
-        height: 170px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        position: bottom;
-    }
-    .categorias{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 3%;
-    }
-    .cadacategoria{
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        background-color:#7895bc5c;
-        border-radius: 15px;
-        padding: 20px;
-        margin: 1%;
-        border: 1.5px #033c89 solid;
-    }
-}
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-ol,ul,li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-}
-p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-footer{
-    background-image: url(../img/Imagen\ de\ WhatsApp\ 2024-11-22\ a\ las\ 12.37.23_74fd6c9b.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    position: bottom;
-}
-.titulo{
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    color: #033c89;
-    margin: 5px 0px;
-}
-.subtitulo{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #033c89;
-    font-size: 15px;
-    margin-top: 5px;
-}
-
-/* CSS DEL INDEX */
-header{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    width: 10%;
-}
-.items{
-    display: flex;
-    justify-content: space-between;
-}
-.items li{
-    margin: 0px 10px;
-}
-.buscar{
-    background-color: #033c89;
-    color: white;
-    padding: 3px 10px;
-    border: solid white 2px;
-    border-radius: 5px;
-    font-size: 12px;
-}
-.imgfetch{
-    width: 50%;
-    border-radius: 10px;
-}
-.recetassection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-} 
-.recetasarticle{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 40vw;
-    width: 500px;
-    margin-top: 30px;
-    background-color: #7895bc5c;
-    padding: 30px 0px;
-    border-radius: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-.completarb{
-    display: none;
-}
-.titindex{
-    text-align: center;
-}
-.artboton{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.vermas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    padding: 10px;
-    margin-top: 80px;
-    width: 150px;
-    border: 1.5px #033c89 solid;
-    border-radius: 10px;
-}
-.azulindex{
-    color: #033c89;
-    margin-top: 5px;
-}
-.link{
-    text-decoration: underline;
-}
-.link:hover{
-    font-weight: bold;
-}
-
-/* CSS DEL CATEGORIES */
-
-/* CSS DEL LOGIN */
-.cajalogin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.formulariologin{
-    background-color: #7895bc5c;
-    width: 400px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.flogin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.itemslogin{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    padding: 10px;
-    margin: 10px 5px;
-    width: 250px;
-    border: 1.5px #033c89 solid;
-    border-radius: 10px;
-}
-.botoneslogin{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 150px; 
-    padding: 20px;
-}
-.cuenta{
-    display: block;
-    text-wrap: nowrap;
-    color: white;
-    padding: 3px;
-}
-button{
-    background-color: #033d8974;
-}
-
-/* CSS DEL REGISTER */
-.completarc{
-    display: none;
-}
-.completare{
-    display: none;
-}
-.tyc{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 20px;
     font-size: 15px;
     color: #033c89;
 }
@@ -515,6 +260,11 @@ button{
     align-items: center;
     padding: 10px;
 }
+/*CSS RECETA*/
+.nombre{
+    font-weight: bold;
+}
+
 
 /*RESPONSIVE*/
 @media (max-width: 640px)  {
@@ -559,6 +309,21 @@ button{
     .footerregister{
         height: 150px;
     }
-}
-    margin-top: 10px;
+    /*categorias*/
+    .categorias{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3%;
+    }
+    .cadacategoria{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        background-color:#7895bc5c;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 1%;
+        border: 1.5px #033c89 solid;
+    }
 }
