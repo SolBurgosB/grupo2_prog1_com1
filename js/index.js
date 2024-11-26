@@ -34,7 +34,6 @@ fetch(`https://dummyjson.com/recipes?limit=${limit}&skip=${skip}`)
     limiterecetas();
     vermas.addEventListener("click" , function () {
         skip+=limit;
-        vermas.style.display="none";
         limiterecetas();
     });
 
