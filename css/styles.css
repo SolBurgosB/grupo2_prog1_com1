@@ -216,11 +216,23 @@ button{
     font-weight: 400;
     font-style: normal;
     margin-top: 20px;
+    font-size: 15px;
+    color: #033c89;
+}
+.formularioregister{
+    background-color: #7895bc5c;
+    width: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 /*RESPONSIVE*/
-/*general*/
 @media (max-width: 640px)  {
+    /*general*/
     body{
         margin-top: 80px;
     }
@@ -228,38 +240,37 @@ button{
         width: 20%;
     }
     header{
-        display: flex;
-        flex-wrap: wrap;
         margin: 0px;
-        justify-content: space-between;
-        align-items: center;
         padding: 10px;
         position: fixed;
         top: 0;
         background-color:#ffffff;
     }
-    .items{
-        display: flex;
-        justify-content: space-between;
-    }
     .items li{
-        margin: 0px 10px;
         font-size: 13px;
     }
     .fheader{
         display: none;
     }
     footer{
-        background-image: url(../img/Imagen\ de\ WhatsApp\ 2024-11-22\ a\ las\ 12.37.23_74fd6c9b.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
         height: 170px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         font-size: 12px;
-        position: bottom;
+    }
+    /*login*/
+    .formulariologin{
+        width: 55%;
+        margin-top: 15px;
+    }
+    .itemslogin{
+        width: 200px;
+    }
+    /*register*/
+    .formularioregister{
+        width: 55%;
+        margin-top: 15px;
+        padding: 5px;
+    }
+    .footerregister{
+        height: 150px;
     }
 }
