@@ -46,8 +46,6 @@ footer{
     font-size: 15px;
     margin-top: 5px;
 }
-
-/* CSS DEL INDEX */
 header{
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +71,13 @@ header{
     border-radius: 5px;
     font-size: 12px;
 }
+.buscar:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
+}
+
+/* CSS DEL INDEX */
+
 .imgfetch{
     width: 50%;
     border-radius: 10px;
@@ -135,8 +140,43 @@ header{
 .link:hover{
     font-weight: bold;
 }
+.vermas:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
+}
 
 /* CSS DEL CATEGORIES */
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3%;
+}
+.tc{
+    text-align: center;
+    margin: 0.8%;
+}
+.medio{
+    height: 120px;
+    background-image: url(../img/981ddcc2ee9584888ce593dc4b2dd24e.jpg);
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.cadacategoria{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color:#7895bc5c;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 1%;
+    border: 1.5px #033c89 solid;
+}
+.cadacategoria:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
+}
 
 /* CSS DEL LOGIN */
 .cajalogin {
@@ -172,6 +212,10 @@ header{
     border: 1.5px #033c89 solid;
     border-radius: 10px;
 }
+.itemslogin:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
+}
 .botoneslogin{
     display: flex;
     flex-direction: row;
@@ -201,4 +245,66 @@ button{
     font-weight: 400;
     font-style: normal;
     margin-top: 10px;
+}
+
+/*RESPONSIVE*/
+/*general*/
+@media (max-width: 640px)  {
+    body{
+        margin-top: 80px;
+    }
+    .logo{
+        width: 20%;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        background-color:#ffffff;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .items li{
+        margin: 0px 10px;
+        font-size: 13px;
+    }
+    .fheader{
+        display: none;
+    }
+    footer{
+        background-image: url(../img/Imagen\ de\ WhatsApp\ 2024-11-22\ a\ las\ 12.37.23_74fd6c9b.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        position: bottom;
+    }
+    .categorias{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3%;
+    }
+    .cadacategoria{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        background-color:#7895bc5c;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 1%;
+        border: 1.5px #033c89 solid;
+    }
 }

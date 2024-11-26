@@ -34,7 +34,7 @@ fetch('https://dummyjson.com/recipes/tags')
         for (let i = 0; i < data.length; i++) {
             console.log(data[i]);
             informacion +=
-            `<article>
+            `<article class="cadacategoria">
                 <p><a href="./category.html?categoria=${data[i]}">${data[i]}</a></p>
             </article>`
         } 
