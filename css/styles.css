@@ -71,6 +71,10 @@ header{
     border-radius: 5px;
     font-size: 12px;
 }
+.buscar:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
+}
 
 /* CSS DEL INDEX */
 
@@ -118,6 +122,10 @@ header{
     width: 150px;
     border: 1.5px #033c89 solid;
     border-radius: 10px;
+}
+.vermas:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
 }
 
 /* CSS DEL CATEGORIES */
@@ -186,6 +194,10 @@ header{
     width: 250px;
     border: 1.5px #033c89 solid;
     border-radius: 10px;
+}
+.itemslogin:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
 }
 .botoneslogin{
     display: flex;
@@ -261,5 +273,21 @@ button{
         align-items: center;
         font-size: 12px;
         position: bottom;
+    }
+    .categorias{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3%;
+    }
+    .cadacategoria{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        background-color:#7895bc5c;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 1%;
+        border: 1.5px #033c89 solid;
     }
 }
