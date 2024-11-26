@@ -266,6 +266,10 @@ button{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    color: #033c89;
+}
+.unaporuna:hover{
+    font-weight: bold;
 }
 .unaporunaart{
     display: flex;
@@ -281,11 +285,24 @@ button{
 }
 .instruccion{
     text-align: center;
+    margin: 10px;
 }
 .foto{
-    width: 40%
+    width: 40%;
+    border-radius: 10px;
+    margin: 10px;
 }
 .nombre{
+    font-weight: bold;
+}
+.tiempoP{
+    font-weight: bold;
+    margin: 10px;
+}
+.tiempoC{
+    font-weight: bold;
+}
+.categoria{
     font-weight: bold;
 }
 

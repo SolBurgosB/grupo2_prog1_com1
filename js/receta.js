@@ -12,7 +12,7 @@ fetch(`https://dummyjson.com/recipes/${id}`) //hago lo de comillas invertidas, e
        let nombre = document.querySelector(".nombre"); //esto es la clase del HTML
        nombre.innerText+=` ${data.name}` //este .algo tiene que coincidir con la API
        let instruccion = document.querySelector(".instruccion");
-       instruccion.innerText+=` ${data.instructions}`
+       instruccion.innerText+= `${data.instructions} `
        let tiempoP = document.querySelector(".tiempoP");
        tiempoP.innerText+=` ${data.prepTimeMinutes}`
        let tiempoC = document.querySelector(".tiempoC");
