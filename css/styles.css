@@ -75,19 +75,83 @@ header{
 /* CSS DEL INDEX */
 
 .imgfetch{
-    width: 30%
+    width: 40%
 }
 .recetassection{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-} /* REVISAR A QUE CONTENEDOR PONERLO*/
+} 
+.recetasarticle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    margin-top: 30px;
+}
 .completarb{
     display: none;
 }
+.titindex{
+    text-align: center;
+}
+.artboton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.vermas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 150px;
+    border: 1.5px #033c89 solid;
+    border-radius: 10px;
+}
 
 /* CSS DEL CATEGORIES */
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3%;
+}
+.tc{
+    text-align: center;
+    margin: 0.8%;
+}
+.medio{
+    height: 120px;
+    background-image: url(../img/981ddcc2ee9584888ce593dc4b2dd24e.jpg);
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.cadacategoria{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color:#7895bc5c;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 1%;
+    border: 1.5px #033c89 solid;
+}
+.cadacategoria:hover{
+    background-color:#7895bc88;
+    border: 2px #033c89 solid;
+}
 
 /* CSS DEL LOGIN */
 .cajalogin {
