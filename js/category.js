@@ -17,10 +17,10 @@ fetch(`https://dummyjson.com/recipes/tag/${categoria}`)
             console.log(data.recipes); 
             informacion +=
             `<article class="artcateg">
-                <img src="${data.recipes[i].image}" alt ="${data.recipes[i].name}" class="foto">
+                <img src="${data.recipes[i].image}" alt ="${data.recipes[i].name}" class="foto"/>
                 <h2>${data.recipes[i].name}</h2>
                 <p><strong>Dificultad:</strong> ${data.recipes[i].difficulty}</p>
-                <p><a href="./receta.html?id=${data.recipes[i].id}">Ver detalle</a></p>
+                <p><a href="./receta.html?id=${data.recipes[i].id}" class="puntual">Ver detalle</a></p>
             </article>`
         } 
         cdetalle.innerHTML=informacion

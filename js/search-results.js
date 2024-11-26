@@ -36,11 +36,11 @@ fetch(`https://dummyjson.com/recipes`) //hago lo de comillas invertidas, el /${c
                 console.log(data.recipes[i]);
                 //voy acumulando la información que quiero
                 resultado+= 
-                `<article>
-                    <p>Resultados de búsqueda para: ${data.recipes[i].name}</p>
-                    <img src="${data.recipes[i].image}" alt="Receta"/>
+                `<article class="artsearch">
+                    <p class="resul">Resultados de búsqueda para: ${data.recipes[i].name}</p>
+                    <img src="${data.recipes[i].image}" alt="Receta" class="foto"/>
                     <p>Título: ${data.recipes[i].name}</p>
-                    <p><a href="./receta.html?id=${data.recipes[i].id}">Link al detalle</a></p>
+                    <p><a href="./receta.html?id=${data.recipes[i].id}" class="puntual2">Link al detalle</a></p>
                 </article>`
             }
         } //.image . name y .status lo saco de la API, id= porque lo hace? --> poruqe yo quiero de la API busque ese
