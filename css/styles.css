@@ -343,6 +343,10 @@ button{
     font-style: normal;
     font-size: 15px;
     color: #033c89;
+    text-decoration: underline;
+}
+.puntual:hover{
+    font-weight: bold;
 }
 
 /*CSS SEARCH-RESULTS*/
