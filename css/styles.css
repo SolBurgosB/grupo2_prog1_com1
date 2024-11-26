@@ -260,9 +260,49 @@ button{
     align-items: center;
     padding: 10px;
 }
-/*CSS RECETA*/
+/*RECETA*/
+.unaporuna{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.unaporunaart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    margin-top: 30px;
+}
+.instruccion{
+    text-align: center;
+}
+.foto{
+    width: 40%
+}
 .nombre{
     font-weight: bold;
+}
+
+/*CSS CATEGORIA*/
+.cdetalle{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.artcateg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    margin-top: 30px;
+}
+.titcateg{
+    text-align: center;
 }
 
 
