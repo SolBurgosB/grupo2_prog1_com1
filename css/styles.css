@@ -159,6 +159,10 @@ header{
 .cadacategoria:hover{
     background-color:#7895bc88;
     border: 2px #033c89 solid;
+    font-weight: bold;
+}
+.textocategorias{
+    color: #033c89
 }
 
 /* CSS DEL LOGIN */
@@ -228,6 +232,10 @@ button{
     font-weight: 400;
     font-style: normal;
     margin-top: 20px;
+}
+/*CSS RECETA*/
+.nombre{
+    font-weight: bold;
 }
 
 /*RESPONSIVE*/
