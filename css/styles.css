@@ -46,8 +46,6 @@ footer{
     font-size: 15px;
     margin-top: 5px;
 }
-
-/* CSS DEL INDEX */
 header{
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +71,9 @@ header{
     border-radius: 5px;
     font-size: 12px;
 }
+
+/* CSS DEL INDEX */
+
 .imgfetch{
     width: 30%
 }
@@ -151,4 +152,50 @@ button{
     font-weight: 400;
     font-style: normal;
     margin-top: 20px;
+}
+
+/*RESPONSIVE*/
+/*general*/
+@media (max-width: 640px)  {
+    body{
+        margin-top: 80px;
+    }
+    .logo{
+        width: 20%;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        background-color:#ffffff;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .items li{
+        margin: 0px 10px;
+        font-size: 13px;
+    }
+    .fheader{
+        display: none;
+    }
+    footer{
+        background-image: url(../img/Imagen\ de\ WhatsApp\ 2024-11-22\ a\ las\ 12.37.23_74fd6c9b.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        position: bottom;
+    }
 }
