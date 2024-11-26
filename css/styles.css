@@ -87,6 +87,32 @@ header{
 }
 
 /* CSS DEL CATEGORIES */
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3%;
+}
+.tc{
+    text-align: center;
+}
+.medio{
+    height: 120px;
+    background-image: url(../img/981ddcc2ee9584888ce593dc4b2dd24e.jpg);
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.cadacategoria{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color:#7895bc5c;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 1%;
+    border: 1.5px #033c89 solid;
+}
 
 /* CSS DEL LOGIN */
 .cajalogin {
