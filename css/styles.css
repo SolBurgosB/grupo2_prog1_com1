@@ -55,6 +55,16 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.iheader{
+    color: #033c89;
+    border-radius: 5px;
+    height: 20px;
+    border: 1.5px solid black;
+}
+.buscarresponsive{
+    display: flex;
+    align-items: center;
+}
 .logo{
     width: 10%;
 }
@@ -70,8 +80,11 @@ header{
     color: white;
     padding: 3px 10px;
     border: solid white 2px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .buscar:hover{
     background-color:#7895bc88;
@@ -104,6 +117,7 @@ header{
 }
 .completarb{
     display: none;
+    color: #033d8974;
 }
 .titindex{
     text-align: center;
@@ -181,11 +195,11 @@ header{
     color: #033c89
 }
 /* CSS DEL LOGIN */
-.cajalogin {
+.cajalogin{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    position: relative;
+    justify-content: center;
 }
 .formulariologin{
     background-color: #7895bc5c;
@@ -207,7 +221,7 @@ header{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: #033c89;
     padding: 10px;
     margin: 10px 5px;
     width: 250px;
@@ -217,6 +231,9 @@ header{
 .itemslogin:hover{
     background-color:#7895bc88;
     border: 2px #033c89 solid;
+}
+.enviarlogin{
+    color: white;
 }
 .botoneslogin{
     display: flex;
@@ -238,9 +255,13 @@ button{
 /* CSS DEL REGISTER */
 .completarc{
     display: none;
+    color: #033c89;
+    font-weight: bold;
 }
 .completare{
     display: none;
+    color: #033c89;
+    font-weight: bold;
 }
 .tyc{
     font-family: "Poppins", sans-serif;
@@ -355,6 +376,9 @@ button{
     flex-direction: column;
     align-items: center;
  }
+ .noresultados{
+    color: #033c89;
+ }
  .artsearch{
      display: flex;
      flex-wrap: wrap;
@@ -415,7 +439,7 @@ button{
         display: none;
     }
     footer{
-        height: 170px;
+        height: 150px;
         font-size: 12px;
     }
     /*login*/

@@ -48,7 +48,7 @@ fetch(`https://dummyjson.com/recipes`) //hago lo de comillas invertidas, el /${c
             resultados.innerHTML=resultado
         }
         else {
-            resultados.innerHTML=`<p>No se encontraron recetas que coincidan con: <strong>${nombre}</strong>.</p>`
+            resultados.innerHTML=`<p class="noresultados">No se encontraron recetas que coincidan con: <strong>${nombre}</strong>.</p>`
         }
     })
     .catch(function(error) {
