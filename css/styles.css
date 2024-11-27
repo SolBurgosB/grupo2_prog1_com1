@@ -117,7 +117,7 @@ header{
 }
 .completarb{
     display: none;
-    color: #033d8974;
+    color: #033c89;
 }
 .titindex{
     text-align: center;
@@ -136,6 +136,7 @@ header{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 15px;
     color: white;
     padding: 10px;
     margin-top: 80px;
@@ -227,6 +228,7 @@ header{
     width: 250px;
     border: 1.5px #033c89 solid;
     border-radius: 10px;
+    font-size: 15px;
 }
 .itemslogin:hover{
     background-color:#7895bc88;
@@ -247,6 +249,16 @@ header{
     text-wrap: nowrap;
     color: white;
     padding: 3px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    margin: 10px 5px;
+    width: 250px;
+    border: 1.5px #033c89 solid;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #033d8974;
 }
 button{
     background-color: #033d8974;
@@ -303,6 +315,7 @@ button{
     background-color: #7895bc5c;
     border-radius: 10px;
     padding: 15px;
+    text-align: center;
 }
 .instruccion{
     text-align: center;
@@ -315,6 +328,7 @@ button{
 }
 .nombre{
     font-weight: bold;
+    text-decoration: underline;
 }
 .tiempoP{
     font-weight: bold;
@@ -349,6 +363,7 @@ button{
     font-style: normal;
     font-size: 15px;
     color: #033c89;
+    text-align: center;
 }
 .titcateg{
     text-align: center;
@@ -417,23 +432,22 @@ button{
 /*RESPONSIVE*/
 @media (max-width: 640px)  {
     /*general*/
-    body{
-        margin-top: 80px;
-    }
     .logo{
-        width: 15%;
+        width: 20%;
+        margin: 10px;
     }
     header{
         margin: 0px;
         padding: 10px;
-        position: fixed;
         top: 0;
         background-color:#ffffff;
         display: flex;
         flex-wrap: nowrap;
+        flex-direction: column;
     }
     .items li{
         font-size: 13px;
+        margin: 10px;
     }
     .fheader{
         display: none;
@@ -441,6 +455,16 @@ button{
     footer{
         height: 150px;
         font-size: 12px;
+    }
+    .buscarresponsive{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .iheader{
+        height: 20px;
+        margin: 5px;
     }
     /*login*/
     .formulariologin{
