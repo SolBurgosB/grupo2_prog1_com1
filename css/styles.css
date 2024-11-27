@@ -426,9 +426,6 @@ button{
  .puntual2:hover{
     font-weight: bold;
  }
-
-
-
 /*RESPONSIVE*/
 @media (max-width: 640px)  {
     /*general*/
