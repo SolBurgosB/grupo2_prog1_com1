@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="bodylogin">
     <header class="">
         <img class="logo" src="./img/logo.png" alt="logo">
         <nav>
@@ -20,11 +20,13 @@
                 <li><a href="./register.html">Registrate</a></li>
             </ul>
         </nav>
-        <form action="./search-results.html" method="GET" class="fheader">
-            <input type="search" name="Buscar" value="" class="iheader">
-            <button class="buscar">Buscar</button>
-            <p class="completarb">No se realizó ninguna búsqueda</p>
-        </form>
+        <div class="buscarresponsive">
+            <form action="./search-results.html" method="GET" class="fheader aparecer">
+                <input type="search" name="Buscar" value="" class="iheader">
+                <button class="buscar">Buscar</button>
+            </form>
+        </div>
+        <p class="completarb">No se realizó ninguna búsqueda</p>
     </header>
     <div class="cajalogin">
         <div class="formulariologin">
@@ -33,7 +35,7 @@
                 <input type="email" placeholder="Ingresá tu email" class="evalido itemslogin"> 
                 <input type="password" placeholder="Contraseña" class="cvalida itemslogin">
                 <section class="botoneslogin">
-                    <button type="submit" class="itemslogin">Ingresá</button>
+                    <button type="submit" class="itemslogin enviarlogin">Ingresá</button>
                     <button class="itemslogin"><a href="./register.html" class="cuenta">No tengo cuenta</a></button>
                 </section>
             </form>

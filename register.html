@@ -20,16 +20,18 @@
                 <li><a href="./register.html">Registrate</a></li>
             </ul>
         </nav>
-        <form action="./search-results.html" method="GET" class="fheader">
-            <input type="search" name="Buscar" value="" class="iheader">
-            <button class="buscar">Buscar</button>
-            <p class="completarb">No se realizó ninguna búsqueda</p>
-        </form>
+        <div class="buscarresponsive">
+            <form action="./search-results.html" method="GET" class="fheader aparecer">
+                <input type="search" name="Buscar" value="" class="iheader">
+                <button class="buscar">Buscar</button>
+            </form>
+        </div>
+        <p class="completarb">No se realizó ninguna búsqueda</p>
     </header>
     <div class="cajalogin">
         <div class="formularioregister">
             <h2 class="titulo">Registrate</h2>
-            <form class="fregister flogin"> 
+            <form class="fregister flogin" action="./login.html"> 
                 <h2 class="subtitulo">Email</h2>
                 <input type="email" placeholder="Email" class="ervalido itemslogin">
                 <p class="completare">Por favor complete el campo</p>
@@ -42,7 +44,7 @@
                     </label>
                 </section>
                 <section class="botoneslogin">
-                    <button class="itemslogin" type="submit">Registrarse</button>
+                    <button class="itemslogin enviarlogin" type="submit" >Registrarse</button>
                     <button class="itemslogin"><a class="cuenta" href="./login.html">Ya tengo una cuenta</a></button>
                 </section>
             </form>
