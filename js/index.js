@@ -15,7 +15,6 @@ fetch(`https://dummyjson.com/recipes?limit=${limit}&skip=${skip}`)
         console.log(data);
         let informacion = recetassection.innerHTML;
         for (let i = 0; i < data.recipes.length; i++) {
-            console.log(data.recipes[i]);
             informacion+= 
             `<article class="recetasarticle">
                 <img src="${data.recipes[i].image}" alt="imagen receta" class="imgfetch"/> 

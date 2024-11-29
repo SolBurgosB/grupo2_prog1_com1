@@ -1,16 +1,15 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams (queryString);
-let id=queryStringObj.get("id"); //id es el nombre de la clave
+let id=queryStringObj.get("id"); 
 
-fetch(`https://dummyjson.com/recipes/${id}`) //hago lo de comillas invertidas, el /${clave}
-    .then(function(response){ //response es el array que veo en el link
+fetch(`https://dummyjson.com/recipes/${id}`) 
+    .then(function(response){ 
         return response.json();
     })
     .then(function(data) {
-        console.log(data);
         
-       let nombre = document.querySelector(".nombre"); //esto es la clase del HTML
-       nombre.innerText+=` ${data.name}` //este .algo tiene que coincidir con la API
+       let nombre = document.querySelector(".nombre"); 
+       nombre.innerText+=` ${data.name}` 
        let instruccion = document.querySelector(".instruccion");
        instruccion.innerText += `  ${data.instructions} `
        let tiempoP = document.querySelector(".tiempoP");

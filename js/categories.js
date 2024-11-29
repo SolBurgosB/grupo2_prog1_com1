@@ -28,11 +28,9 @@ fetch('https://dummyjson.com/recipes/tags')
     //No modificar hasta aca
     
     .then(function(data) {
-        console.log(data);
         
         let informacion = "";
         for (let i = 0; i < data.length; i++) {
-            console.log(data[i]);
             informacion +=
             `<article class="cadacategoria">
                 <p><a href="./category.html?categoria=${data[i]}" class="textocategorias">${data[i]}</a></p>
